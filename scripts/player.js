@@ -11,6 +11,7 @@ const songs = ['shit','dark','light','good','night','shelter'];
 
 // default song
 let songIndex = 1;
+    audio.volume = 0.2;
 
 // Init
 function loadSong (song) {
@@ -23,7 +24,8 @@ loadSong(songs[songIndex]);
 function playSong() {
     player.classList.add("playing")
     playPause.src = "media/images/btn-stop.svg"
-    audio.play()
+    audio.play();
+    pauseMusic();
 }
 
 //Pause

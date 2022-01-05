@@ -9,6 +9,7 @@ const playerMin = document.querySelector("#player"),
       durationMin = playerMin.querySelector("#duration");
 
 let musicIndex = 0;
+    audioMin.volume = 0.2;
     
  
 
@@ -54,12 +55,14 @@ function passive(){
 
 
 playBtnMin.addEventListener("click", ()=>{
+    pauseSong();
     const isMusicActive = song[musicIndex].classList.contains("playing");
     // if isMusicActive is true then call passive else call active
     isMusicActive ? passive() : active();
 });
 
 playBtnMin.addEventListener("click", ()=>{
+    pauseSong();
     const isMusicPause =  playerMin.classList.contains("playing");
     // if isMusicPause is true then call pauseMusic else call playMusic
     isMusicPause ? pauseMusic() : playMusic();
@@ -197,6 +200,7 @@ function playingNow(){
 function clicked(element){
     let getIndex = element.getAttribute("index");
     musicIndex = getIndex;
+    pauseSong();
     loadMusic(musicIndex);
     playMusic();
     playingNow();

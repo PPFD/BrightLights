@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type=" text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,18 +18,24 @@
 
         <div class="firstScreen">
             <div class="container">    
-                <div class="firstScreen__inner">
-                        <img class="firstScreen__logo" src="media/images/Logo.svg" alt="">
-                        <img class="firstScreen__name" src="media/images/SiteName.svg" alt="">
+                <header  class="firstScreen__inner data-header">
+                    <div class="firstScreen__inner__container">
+                        <a data-goto=".data-header" class="firstScreen__logo navigation" href="#">
+                            <img src="media/images/Logo.svg" alt="">
+                        </a>
+                        <a data-goto=".data-header" class="firstScreen__name navigation" href="#">
+                            <img src="media/images/SiteName.svg" alt="">
+                        </a> 
+                    </div>
                     <nav class="firstScreen__nav">
-                        <a class="firstScreen__nav__item" href="#">About</a>
-                        <a class="firstScreen__nav__item" href="#">News </a>
-                        <a class="firstScreen__nav__item" href="#">Music</a>
-                        <a class="firstScreen__nav__item" href="#">Media</a>
-                        <a class="firstScreen__nav__item" href="#">Tours</a>
-                        <a class="firstScreen__nav__item" href="#">Contacts</a>
+                        <a data-goto=".data-about" class="firstScreen__nav__item navigation" href="#">About</a>
+                        <a data-goto=".data-news" class="firstScreen__nav__item navigation" href="#">News </a>
+                        <a data-goto=".data-music" class="firstScreen__nav__item navigation" href="#">Music</a>
+                        <a data-goto=".data-gallary" class="firstScreen__nav__item navigation" href="#">Media</a>
+                        <a data-goto=".data-events" class="firstScreen__nav__item navigation" href="#">Tours</a>
+                        <a data-goto=".data-footer" class="firstScreen__nav__item navigation" href="#">Contacts</a>
                     </nav>
-                </div>
+                </header>
 
                 <section class="titlesAndPlayer">
                             <div class="titlesAndPlayer__titles">
@@ -45,7 +51,7 @@
                                     <div class="titlesAndPlayer__player__progress__container__progress"></div> 
                                 </div>
                                 <div class="titlesAndPlayer__player__time">
-                                    <p><time class="titlesAndPlayer__player__time__currTime"></time>-<time class="titlesAndPlayer__player__time__durat"></time></p>
+                                    <p><span class="titlesAndPlayer__player__time__currTime"></span>-<span class="titlesAndPlayer__player__time__durat"></span></p>
                                 </div>
                             </div>
                 </section>
@@ -53,30 +59,32 @@
     
     <!-- ____ News ____ -->
 
-                <div class="news__container">
+                <div class="news__container data-news">
                     <div class="news__item news__item__1">
                         <div class="news__title">
-                        <p class="news__text"><span>Working on my upcoming full-lenth</span> <span>album that`s releasing later this year.</span></p>
+                            <a href="#" target="_blank" class="news__text"><span>Working on my upcoming full-lenth</span> <span>album that`s releasing later this year.</span></a>
+                            <a href="#" target="_blank" class="news__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</a>
                         </div>
                     </div> 
 
                     <div class="news__item news__item__2 ">
                         <div class="news__title">
-                            <p class="news__text"><span>Halloween vibes.</span><span>Listen my new track!</span></p>
+                            <a href="#" target="_blank" class="news__text"><span>Halloween vibes.</span><span>Listen my new track!</span></a>
+                            <a href="#" target="_blank" class="news__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</a>
                         </div>
                     </div> 
 
                     <div class="news__item news__item__3">
                         <div class="news__title">
-                            <p class="news__text"><span>WarForLove is OUT NOW!!</span><span>Stream it here!</span></p>
+                            <a href="#" target="_blank" class="news__text"><span>WarForLove is OUT NOW!!</span><span>Stream it here!</span></a>
+                            <a href="#" target="_blank" class="news__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</a>
                         </div>
                     </div> 
                 </div>
     
     <!-- ____ About ____ -->
 
-
-                <div class="about">
+                <div class="about data-about">
                     <section class="about__section">
                         <div class="about__section__title">
                             <div class="waves">
@@ -140,23 +148,23 @@
                 </div>
     <!-- ____ Review ____ -->
 
-                <article class="review">
+                <div class="review data-review">
                     <div class="review__text">
                         <img  src="media/images/“.svg" alt="" class="review__text__sign">
                         <p class="review__text__text">“In an age where mainstream music is designed to be as
                             easily consumed as possible, listening to Bright Lights is
                             refreshing, to say the least. Her sound is perfect for radio
                             but complex enough to separate her from other pop newcomers.”</p>
-                        <span class="review__text__siteName">PopULove.net</span>
+                        <a href="#" target="_blank" class="review__text__siteName">PopULove.net</a>
                     </div>
                     <img src="media/images/sliderElement2.png" alt="" class="review__photo">
-                </article>     
+                </div>     
                 
                 
     <!-- ____ Music ____ -->
 
 
-                <article class="music">
+                <article class="music data-music">
                     <div class="music__photo">
                         <img src="media/images/musicPhoto.png" alt="">
                     </div>
@@ -192,7 +200,7 @@
                                     <div id="progressBar" class="titlesAndPlayer__player__progress__container__progress"></div>
                                 </div>
                                 <div class="titlesAndPlayer__player__time">
-                                    <p><time id="currentTime" class="titlesAndPlayer__player__time__currTime"></time>-<time id="duration" class="titlesAndPlayer__player__time__durat"></time></p>
+                                    <p><span id="currentTime" class="titlesAndPlayer__player__time__currTime"></span>-<span id="duration" class="titlesAndPlayer__player__time__durat"></span></p>
                                 </div>
                             </div>
                         </div>
@@ -202,93 +210,108 @@
                         
                         <div class="music__content__follow">
                             <h3 class="music__content__follow__subtitle subtitle2">Follow me:</h3>
-                            <div class="music__content__follow__element">
+                            <a href="#" target="_blank" class="music__content__follow__element">
                                 <img src="media/images/spotify.svg" alt="" class="music__content__follow__element__icon">
                                 <div class="music__content__follow__element__name">Spotify</div>
-                            </div>
-                            <div class="music__content__follow__element">
+                            </a>
+                            <a href="#" target="_blank" class="music__content__follow__element">
                                 <img src="media/images/itunes.svg" alt="" class="music__content__follow__element__icon">
                                 <div class="music__content__follow__element__name">iTunes</div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </article>
     
     <!-- ____ Gallery ____ -->
 
-                <section class="gallery">
-                    <img src="media/images/gallery_1.png" class="gallery__element">
+                <div class="gallery data-gallary">
+                    <img src="media/images/gallery_1.png" class="gallery__element" alt="">
                     <div class="gallary__bigelement">
                         <div class="gallary__bigElement__container">
-                            <img src="media/images/gallery_2.png"  class="gallery__element__lil" src="#" alt="">
-                            <img src="media/images/gallery_3.png" class="gallery__element__lil" src="#" alt="">
+                            <img src="media/images/gallery_2.png"  class="gallery__element__lil" alt="">
+                            <img src="media/images/gallery_3.png" class="gallery__element__lil" alt="">
                         </div>
                         <div class="gallary__bigElement__container">
-                            <div class="gallery__element__big"  alt=""></div>
+                            <div class="gallery__element__big"></div>
                             <p>EDC Las Vegas Mainstage</p>
                         </div>
                     </div>
-                    <img src="media/images/gallery_4.png" class="gallery__element">
-                </section>
+                    <img src="media/images/gallery_4.png" class="gallery__element" alt="">
+                </div>
 
 
     <!-- ____ Events ____ -->
 
 
-                <section class="events">
-                    <button class="events__arrowContainer events__arrowContainer-prev">
-                        <img src="media/images/arrow prev.png" alt="">
-                    </button>
+                <div class="events data-events">
                     <div class="events__content">
-
-                        <div class="events__content__element">
-                            <img class="events__content__element__img" src="media/images/events1.png" alt="">
-                            <p class="events__content__element__location">Chandler, AZ</p>
-                            <p class="events__content__element__club">The Park at Wild Horse Pass</p>
-                            <div class="events__content__element__container">
-                                <p class="events__content__element__container__date">Apr 02 2021</p>
-                                <button class="events__content__element__container__btn">
-                                    <span>tickets</span>
-                                </button>
+                            <div class="events__content__element">
+                                <img class="events__content__element__img" src="media/images/events1.png" alt="">
+                                <p class="events__content__element__location">Chandler, AZ</p>
+                                <p class="events__content__element__club">The Park at Wild Horse Pass</p>
+                                <div class="events__content__element__container">
+                                    <p class="events__content__element__container__date">Apr 02 2021</p>
+                                    <button class="events__content__element__container__btn">
+                                        <span>tickets</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="events__content__element">
-                            <img class="events__content__element__img" src="media/images/events2.png" alt="">
-                            <p class="events__content__element__location">Ibiza, IBZ</p>
-                            <p class="events__content__element__club">Swag Ibiza Club</p>
-                            <div class="events__content__element__container">
-                                <p class="events__content__element__container__date">Jul 08 2021</p>
-                                <button class="events__content__element__container__btn">
-                                    <span>tickets</span>
-                                </button>
+                            <div class="events__content__element">
+                                <img class="events__content__element__img" src="media/images/events2.png" alt="">
+                                <p class="events__content__element__location">Ibiza, IBZ</p>
+                                <p class="events__content__element__club">Swag Ibiza Club</p>
+                                <div class="events__content__element__container">
+                                    <p class="events__content__element__container__date">Jul 08 2021</p>
+                                    <button class="events__content__element__container__btn">
+                                        <span>tickets</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="events__content__element">
-                            <img class="events__content__element__img" src="media/images/events3.png" alt="">
-                            <p class="events__content__element__location">Ibiza, IBZ</p>
-                            <p class="events__content__element__club">El Swing Ibiza</p>
-                            <div class="events__content__element__container">
-                                <p class="events__content__element__container__date">Jul 10 2021</p>
-                                <button class="events__content__element__container__btn">
-                                    <span>tickets</span>
-                                </button>
+                            <div class="events__content__element">
+                                <img class="events__content__element__img" src="media/images/events3.png" alt="">
+                                <p class="events__content__element__location">Ibiza, IBZ</p>
+                                <p class="events__content__element__club">El Swing Ibiza</p>
+                                <div class="events__content__element__container">
+                                    <p class="events__content__element__container__date">Jul 10 2021</p>
+                                    <button class="events__content__element__container__btn">
+                                        <span>tickets</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
 
+                            <div class="events__content__element">
+                                <img class="events__content__element__img" src="media/images/events2.png" alt="">
+                                <p class="events__content__element__location">Ibiza, IBZ</p>
+                                <p class="events__content__element__club">Swag Ibiza Club</p>
+                                <div class="events__content__element__container">
+                                    <p class="events__content__element__container__date">Jul 08 2021</p>
+                                    <button class="events__content__element__container__btn">
+                                        <span>tickets</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="events__content__element">
+                                <img class="events__content__element__img" src="media/images/events1.png" alt="">
+                                <p class="events__content__element__location">Chandler, AZ</p>
+                                <p class="events__content__element__club">The Park at Wild Horse Pass</p>
+                                <div class="events__content__element__container">
+                                    <p class="events__content__element__container__date">Apr 02 2021</p>
+                                    <button class="events__content__element__container__btn">
+                                        <span>tickets</span>
+                                    </button>
+                                </div>
+                            </div>
                     </div>
-
-                    <button class="events__arrowContainer events__arrowContainer-next">
-                        <img src="media/images/arrow next.svg" alt="">
-                    </button>
-                </section>
+                </div>
 
 
     <!-- ____ Footer ____ -->
 
 
-                <footer class="footer">
+                <footer class="footer data-footer">
                     <div class="footer__logoContainer">
                         <img class="firstScreen__logo" src="media/images/Logo.svg" alt="">
                         <img class="firstScreen__name firstScreen__name-footer" src="media/images/SiteName.svg" alt="">
@@ -304,12 +327,24 @@
                         </div>
                     </div>
                     <div class="media__container">
-                        <img class="media__container__mediaEl" src="media/images/MediaITunes.svg" width="60px" height="60px" alt="">
-                        <img class="media__container__mediaEl" src="media/images/MediaSpotify.svg" width="60px" height="60px" alt="">
-                        <img class="media__container__mediaEl" src="media/images/MediaInstagram.svg" width="60px" height="60px" alt="">
-                        <img class="media__container__mediaEl" src="media/images/MediaYouTube.svg" width="60px" height="60px" alt="">
-                        <img class="media__container__mediaEl" src="media/images/MediaTwitter.svg" width="60px" height="60px" alt="">
-                        <img class="media__container__mediaEl" src="media/images/MediaFacebook.svg" width="60px" height="60px" alt="">
+                        <a href="#" target="_blank">
+                            <img class="media__container__mediaEl" src="media/images/MediaITunes.svg" width="60" height="60" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img class="media__container__mediaEl" src="media/images/MediaSpotify.svg" width="60" height="60" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img class="media__container__mediaEl" src="media/images/MediaInstagram.svg" width="60" height="60" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img class="media__container__mediaEl" src="media/images/MediaYouTube.svg" width="60" height="60" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img class="media__container__mediaEl" src="media/images/MediaTwitter.svg" width="60" height="60" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img class="media__container__mediaEl" src="media/images/MediaFacebook.svg" width="60" height="60" alt="">
+                        </a>
                     </div>
                     <p class="copyright">©  2020 DJ bright lights.</p>
                 </footer>
@@ -319,5 +354,9 @@
     <script src="scripts/musicList.js"></script>
     <script src="scripts/player.js"></script>
     <script src="scripts/playerMin.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/slider.js"></script>
 </body>
 </html>
