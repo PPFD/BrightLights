@@ -161,7 +161,8 @@ audioMin.addEventListener('timeupdate', currentTimeMin)
 
 for(let i = 0; i < allMusic.length ; i++ )
     {
-        let songElement = `<div index="${i}" id="songEl" class="music__content__list__element">
+        if( i <= 9){
+            let songElement = `<div index="${i}" id="songEl" class="music__content__list__element">
                                 <span class="music__content__list__element__number">0${i+1}</span>
                                 <div id="song" class="music__content__list__element__container">
                                     <p class="music__content__list__element__artist">${allMusic[i].artist}</p>
@@ -170,9 +171,26 @@ for(let i = 0; i < allMusic.length ; i++ )
                                 </div>
                                 <audio id="${allMusic[i].src}" src="media/audio/${allMusic[i].src}.mp3" class="audio" preload="metadata"></audio>
                             </div>`; 
-        songList.insertAdjacentHTML("beforeend", songElement);
+                            
+                            songList.insertAdjacentHTML("beforeend", songElement);
 
-        let songAudioTag = songList.querySelector(`#${allMusic[i].src}`);
+        }
+        else {
+            let songElement = `<div index="${i}" id="songEl" class="music__content__list__element">
+                                <span class="music__content__list__element__number">${i+1}</span>
+                                <div id="song" class="music__content__list__element__container">
+                                    <p class="music__content__list__element__artist">${allMusic[i].artist}</p>
+                                    <span class="space">-</span>
+                                    <p class="music__content__list__element__name">${allMusic[i].name}</p>
+                                </div>
+                                <audio id="${allMusic[i].src}" src="media/audio/${allMusic[i].src}.mp3" class="audio" preload="metadata"></audio>
+                            </div>`; 
+
+                            songList.insertAdjacentHTML("beforeend", songElement);
+
+        }
+        
+       
     };
 
 const songElement = songList.querySelectorAll("#songEl"),
