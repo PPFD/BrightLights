@@ -9,6 +9,10 @@ a{
     color: #FFFFFF;
 }
 
+.disable{
+    pointer-events: none;
+}
+
 .no-selection{
     cursor: default;
 }
@@ -122,6 +126,8 @@ body.lock{
 
 .firstScreen__logo{
     margin-right: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .firstScreen__name{
@@ -586,7 +592,9 @@ body.lock{
     width: 255px;
     height: 500px;  
     border-radius: 30px 0px; 
+    cursor: pointer;
 }
+
 .gallary__bigelement{
     margin: 0 30px;
     display: flex;
@@ -601,11 +609,19 @@ body.lock{
     align-items: center;
     justify-content: center;
     margin: 0 0 30px 0;
+    
 }
+
+.gallary__bigElement__container:hover .gallery__element__big{
+    cursor: pointer;
+    opacity: 1;
+}
+
 .gallary__bigElement__container:last-child{
     margin: 0;
 }
 .gallery__element__lil{
+    cursor: pointer;
     margin: 0 30px 0 0;
 }
 .gallery__element__lil:last-child{
@@ -624,6 +640,11 @@ body.lock{
 
     
     position: relative;
+    transition: .2s;
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 .gallary__bigElement__container p{
@@ -757,9 +778,13 @@ body.lock{
 
     align-items: center;
 }
-.firstScreen__name-footer{
-    margin: 0;
+.footer__logoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
 .footer__contactsContainer{
     margin: 60px 0 0 0;
     display: flex;
@@ -919,7 +944,6 @@ body.lock{
     font-size: 24px;
     font-weight: 700;
 }
-
 
 .modal__event-discription h2{
     margin: 20px 0 0 0;
@@ -1081,9 +1105,9 @@ body.lock{
 }
 
 .plus{
-    stroke: #FFFFFF;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
 .back{
@@ -1106,9 +1130,9 @@ body.lock{
 }
 
 .minus{
-    stroke: #FFFFFF;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
 .modal__close-min{
@@ -1131,6 +1155,7 @@ body.lock{
     display: flex;
     flex-direction: column;
     margin: 0 0 0 20px;
+    min-width: 83px;
 }
 
 .footer__continue-btn{
@@ -1172,6 +1197,11 @@ body.lock{
     opacity: 0;
     visibility: hidden;
     transition: 0.2s;
+}
+
+.modal-mini.open{
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal__close-container{
@@ -1368,8 +1398,46 @@ form * {
 }
 
 
+/* _____________ Gallary modal _____________ */
 
+.gallary-modal-wrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    
+}
 
+.gallary-modal-wrapper.open{
+    opacity: 1;
+    visibility: visible;
+}
+    
+.gallary-modal-container{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallary-modal{
+    max-width: 1110px;
+    height: 660px;
+    margin: auto;
+    position: relative;
+}
+
+.gallary__item{
+    width: 1110px;
+    height: 660px;
+    border-radius: 40px 0;
+}
 
 /* _____________ Waves _____________ */
 
@@ -1505,8 +1573,13 @@ form * {
     overflow: hidden;
 }
 /* Лента слайдов */
+
 .slick-track{
     display: flex;
+}
+
+.slick-disabled{
+    opacity: 0.3;
 }
 
 .events__content .slick-arrow{
@@ -1539,6 +1612,42 @@ form * {
     background: url('../media/images/arrowNext.svg') 0 0 /100% no-repeat;
 }
 .events__content .slick-arrow.slick-next:hover{
+    transition: .2s;
+    background: url('../media/images/arrowNextHover.svg') 0 0 /100% no-repeat;
+}
+
+
+
+.gallary-modal .slick-arrow{
+    position: absolute;
+    z-index: 1110;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 60px;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.gallary-modal .slick-arrow.slick-prev
+{
+    left: -80px;
+    transition: .2s;
+    font-size: 0;
+    background: url('../media/images/arrowPrev.svg') 0 0 /100% no-repeat;
+}
+.gallary-modal .slick-arrow.slick-prev:hover{
+    transition: .2s;
+    background: url('../media/images/arrowPrevHover.svg') 0 0 /100% no-repeat;
+}
+.gallary-modal .slick-arrow.slick-arrow.slick-next
+{
+    left: 1150px;
+    transition: .2s;
+    font-size: 0;
+    background: url('../media/images/arrowNext.svg') 0 0 /100% no-repeat;
+}
+.gallary-modal .slick-arrow.slick-next:hover{
     transition: .2s;
     background: url('../media/images/arrowNextHover.svg') 0 0 /100% no-repeat;
 }

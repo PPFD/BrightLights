@@ -83,23 +83,6 @@
     </svg>
 
     <svg display="none">
-        <symbol id="plus" viewBox="0 0 12 12">
-            <g>
-                <line y1="6" x2="12" y2="6" stroke-width="2"/>
-                <line x1="6" y1="12" x2="6" stroke-width="2"/>
-            </g>
-        </symbol>
-    </svg>
-
-    <svg display="none">
-        <symbol id="minus" viewBox="0 0 12 2">
-            <g>
-                <line y1="1" x2="12" y2="1" stroke-width="2"/>
-            </g>
-        </symbol>
-    </svg>
-
-    <svg display="none">
         <symbol id="back" viewBox="0 0 14 32">
             <g>
                 <path d="M12.5847 29.7695L1.5415 16" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
@@ -325,18 +308,18 @@
     <!-- ____ Gallery ____ -->
 
                 <div class="gallery data-gallary">
-                    <img src="media/images/gallery_1.png" class="gallery__element" alt="">
+                    <img src="media/images/gallery_1.png" class="gallery__element link" alt="">
                     <div class="gallary__bigelement">
                         <div class="gallary__bigElement__container">
-                            <img src="media/images/gallery_2.png"  class="gallery__element__lil" alt="">
-                            <img src="media/images/gallery_3.png" class="gallery__element__lil" alt="">
+                            <img src="media/images/gallery_2.png"  class="gallery__element__lil link" alt="">
+                            <img src="media/images/gallery_3.png" class="gallery__element__lil link" alt="">
                         </div>
-                        <div class="gallary__bigElement__container">
+                        <div class="gallary__bigElement__container link">
                             <div class="gallery__element__big"></div>
-                            <p class="no-selection">EDC Las Vegas Mainstage</p>
+                            <p class="no-selection pointer">EDC Las Vegas Mainstage</p>
                         </div>
                     </div>
-                    <img src="media/images/gallery_4.png" class="gallery__element" alt="">
+                    <img src="media/images/gallery_4.png" class="gallery__element link" alt="">
                 </div>
 
 
@@ -426,16 +409,14 @@
                         </a>
                     </div>
                     <p class="copyright">©  2020 DJ bright lights.</p>
-                </footer>
-
-
-
-    <!-- ____ Modal Windows ____ -->
-            
-
-                
+                </footer>        
     </div>
 </div>
+
+<!-- ____ Modal Windows ____ --> 
+
+
+
             <div class="modal-wrapper modal-window">
                 <div class="modal-container">
                     <div class="modal">
@@ -449,9 +430,9 @@
                             <h2 class="modal__date">Apr 02 2021</h2> 
                         </div>
                         <div class="modal__tickets">
-                            <div class="tickets__element dance-flore">
+                            <div class="tickets__element dance-floor">
                                 <div class="element__name">DANCE FLOOR</div>
-                                <div class="element__work-place">
+                                <div type="number" data-value="0" data-price="18" class="element__work-place">
                                     <div class="work-place__alert hidden">
                                         <p>You can buy only 4 tickets per order</p>
                                         <svg class="alert__arrow">
@@ -460,22 +441,18 @@
                                     </div>
                                     <span class="work-place__cost">18$</span>
                                     <button class="tickets__btn tickets__btn_less shaded">
-                                        <svg class="minus">
-                                            <use  xlink:href="#minus"></use>
-                                        </svg>
+                                        <img class="no-selection minus" src="media/images/Minus.svg" alt="">
                                     </button>
                                     <span class="quantity">0</span>
-                                    <button class="tickets__btn tickets__btn_more">
-                                        <svg class="plus">
-                                            <use  xlink:href="#plus"></use>
-                                        </svg>
+                                    <button class="tickets__btn tickets__btn_more ">
+                                        <img class="no-selection plus"  src="media/images/Plus.svg" alt="">
                                     </button>
                                 </div>
                             </div>
                             
                             <div class="tickets__element meet-and-greet">
                                 <div class="element__name">MEET & GREET</div>
-                                <div class="element__work-place">
+                                <div type="number" data-value="0" data-price="30" class="element__work-place">
                                     <div class="work-place__alert  hidden">
                                         <p>You can buy only 4 tickets per order</p>
                                         <svg class="alert__arrow">
@@ -484,15 +461,11 @@
                                     </div>
                                     <span class="work-place__cost">30$</span>
                                     <button class="tickets__btn tickets__btn_less shaded">
-                                        <svg class="minus">
-                                            <use  xlink:href="#minus"></use>
-                                        </svg>
+                                        <img class="minus no-selection" src="media/images/Minus.svg" alt="">
                                     </button>
                                     <span class="quantity">0</span>
-                                    <button class="tickets__btn tickets__btn_more">
-                                        <svg class="plus">
-                                            <use  xlink:href="#plus"></use>
-                                        </svg>
+                                    <button class="tickets__btn tickets__btn_more ">
+                                        <img class="plus no-selection"  src="media/images/Plus.svg" alt="">
                                     </button>
                                 </div>
                             </div>
@@ -500,35 +473,11 @@
                         </div>
                         <div class="modal__footer">
                             <div class="footer__tickets-container">
-                                <div class="tickets-container__choosen-ticket ">
-                                    <svg class="modal__close modal__close-min">
-                                        <use  xlink:href="#cross"></use>
-                                    </svg>
-                                    <span class="choosen-ticket__name no-selection">DANCE FLOOR</span>
-                                </div>
-                                <div class="tickets-container__choosen-ticket ">
-                                    <svg class="modal__close modal__close-min">
-                                        <use  xlink:href="#cross"></use>
-                                    </svg>
-                                    <span class="choosen-ticket__name no-selection">DANCE FLOOR</span>
-                                </div>
-                                <div class="tickets-container__choosen-ticket ">
-                                    <svg class="modal__close modal__close-min">
-                                        <use  xlink:href="#cross"></use>
-                                    </svg>
-                                    <span class="choosen-ticket__name no-selection">DANCE FLOOR</span>
-                                </div>
-                                <div class="tickets-container__choosen-ticket ">
-                                    <svg class="modal__close modal__close-min">
-                                        <use  xlink:href="#cross"></use>
-                                    </svg>
-                                    <span class="choosen-ticket__name no-selection">MEET & GREET</span>
-                                </div>
                             </div>
                             <div class="footer__payment-information">
                                 <p class="payment-information__tickets">
-                                    <span class="tickets__tickets-amount">4 tickets:</span>
-                                    <span class="tickets__tickets-cost">84$</span>
+                                    <span id="totalAmount" class="tickets__tickets-amount"></span>
+                                    <span id="totalCost" class="tickets__tickets-cost"></span>
                                 </p>
                                 <button class="footer__continue-btn">
                                     <span>Buy</span>
@@ -574,8 +523,15 @@
                 </div>
             </div>
 
-                
 
+            <!-- ____ Gallary modal Windows ____ -->
+                
+        <div class="gallary-modal-wrapper">
+            <div class="gallary-modal-container">
+                <div class="gallary-modal">
+                </div>
+            </div>
+        </div>
             
 
     <script src="scripts/musicList.js"></script>
@@ -590,5 +546,6 @@
     <script src="scripts/lilSlider.js"></script>
     <script src="scripts/submit.js"></script>
     <script src="scripts/modal.js"></script>
+    <script src="scripts/gallarySlider.js"></script>
 </body>
 </html>
