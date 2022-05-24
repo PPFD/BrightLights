@@ -13,7 +13,6 @@
     <title>BrightLights</title>
 </head>
 <body>
-    
      <!-- ____ SVG ____ -->
 
                     
@@ -94,324 +93,344 @@
     <!-- ____ SVG ____ -->
 
 
+
+
+
+
+
+    
     <!-- ____firstScreen___ -->
+   
+    <header  class="firstScreen__inner data-header lock-padding">
+        <div class="header__container">
+            <div class="firstScreen__inner__container">
+                <a data-goto=".data-header" class="firstScreen__logo navigation" href="#">
+                    <img src="media/images/Logo.svg" alt="">
+                </a>
+                <a data-goto=".data-header" class="firstScreen__name navigation" href="#">
+                    <img src="media/images/SiteName.svg" alt="">
+                </a> 
+            </div>
+            <nav class="firstScreen__nav">
+                <a data-goto=".data-about" class="firstScreen__nav__item navigation" href="#">About</a>
+                <a data-goto=".data-news" class="firstScreen__nav__item navigation" href="#">News </a>
+                <a data-goto=".data-music" class="firstScreen__nav__item navigation" href="#">Music</a>
+                <a data-goto=".data-gallary" class="firstScreen__nav__item navigation" href="#">Media</a>
+                <a data-goto=".data-events" class="firstScreen__nav__item navigation" href="#">Tours</a>
+                <a data-goto=".data-footer" class="firstScreen__nav__item navigation" href="#">Contacts</a>
+            </nav>
+        </div>
+    </header>
+    
+   
+    <img src="media/images/FirstScreenBackground.png" alt="" class="photo">
 
-        <div class="firstScreen">
-            <div class="container">    
-                <header  class="firstScreen__inner data-header lock-padding">
-                    <div class="header__container">
-                        <div class="firstScreen__inner__container">
-                            <a data-goto=".data-header" class="firstScreen__logo navigation" href="#">
-                                <img src="media/images/Logo.svg" alt="">
-                            </a>
-                            <a data-goto=".data-header" class="firstScreen__name navigation" href="#">
-                                <img src="media/images/SiteName.svg" alt="">
-                            </a> 
-                        </div>
-                        <nav class="firstScreen__nav">
-                            <a data-goto=".data-about" class="firstScreen__nav__item navigation" href="#">About</a>
-                            <a data-goto=".data-news" class="firstScreen__nav__item navigation" href="#">News </a>
-                            <a data-goto=".data-music" class="firstScreen__nav__item navigation" href="#">Music</a>
-                            <a data-goto=".data-gallary" class="firstScreen__nav__item navigation" href="#">Media</a>
-                            <a data-goto=".data-events" class="firstScreen__nav__item navigation" href="#">Tours</a>
-                            <a data-goto=".data-footer" class="firstScreen__nav__item navigation" href="#">Contacts</a>
-                        </nav>
+
+    <section class="titlesAndPlayer">
+                <div class="titlesAndPlayer__titles">
+                    <h2 class="firstScreen__subtitle subtitle">New Single</h2>
+                    <h1 class="firstScreen__title">War For Love</h1>
+                </div>
+                <div class="titlesAndPlayer__player">
+                    <audio class="audio" preload="metadata">
+                        <source src="#" type="audio/mpeg">
+                    </audio>
+                    <div class="titlesAndPlayer__player__play"><img class="titlesAndPlayer__player__play__play-stop" src="media/images/btn-play.svg" alt=""></div>
+                    <div class="titlesAndPlayer__player__progress__container">
+                        <div class="titlesAndPlayer__player__progress__container__progress"></div> 
                     </div>
-                </header>
-
-                <section class="titlesAndPlayer">
-                            <div class="titlesAndPlayer__titles">
-                                <h2 class="firstScreen__subtitle subtitle">New Single</h2>
-                                <h1 class="firstScreen__title">War For Love</h1>
-                            </div>
-                            <div class="titlesAndPlayer__player">
-                                <audio class="audio" preload="metadata">
-                                    <source src="#" type="audio/mpeg">
-                                </audio>
-                                <div class="titlesAndPlayer__player__play"><img class="titlesAndPlayer__player__play__play-stop" src="media/images/btn-play.svg" alt=""></div>
-                                <div class="titlesAndPlayer__player__progress__container">
-                                    <div class="titlesAndPlayer__player__progress__container__progress"></div> 
-                                </div>
-                                <div class="titlesAndPlayer__player__time">
-                                    <p><span class="titlesAndPlayer__player__time__currTime"></span>-<span class="titlesAndPlayer__player__time__durat"></span></p>
-                                </div>
-                            </div>
-                </section>
+                    <div class="titlesAndPlayer__player__time">
+                        <p><span class="titlesAndPlayer__player__time__currTime"></span>-<span class="titlesAndPlayer__player__time__durat"></span></p>
+                    </div>
+                </div>
+    </section>
+            
         
-    
-    <!-- ____ News ____ -->
+        <!-- ____ News ____ -->
 
-                <div class="news__container data-news">
-                    <div class="news__item news__item__1">
-                        <div class="news__title">
-                            <a href="#" target="_blank" class="news__text"><span>Working on my upcoming full-lenth</span> <span>album that`s releasing later this year.</span></a>
-                            <a href="#" target="_blank" class="news__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</a>
-                        </div>
-                    </div> 
+    <div class="news__container data-news">
+        <div class="news__item">
+            <div class="news__item__1">
 
-                    <div class="news__item news__item__2 ">
-                        <div class="news__title">
-                            <a href="#" target="_blank" class="news__text"><span>Halloween vibes.</span><span>Listen my new track!</span></a>
-                            <a href="#" target="_blank" class="news__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</a>
-                        </div>
-                    </div> 
+            </div>  
+            <div class="news__title">
+                <a href="#" target="_blank" class="news__text"><span>Working on my upcoming full-lenth</span> <span>album that`s releasing later this year.</span></a>
+                <a href="#" target="_blank" class="news__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</a>
+            </div>
+        </div> 
 
-                    <div class="news__item news__item__3">
-                        <div class="news__title">
-                            <a href="#" target="_blank" class="news__text"><span>WarForLove is OUT NOW!!</span><span>Stream it here!</span></a>
-                            <a href="#" target="_blank" class="news__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</a>
-                        </div>
-                    </div> 
-                </div>
-    
-    <!-- ____ About ____ -->
+        <div class="news__item">
+            <div class="news__item__2">
 
-                <div class="about data-about">
-                    <section class="about__section">
-                        <div class="about__section__title">
-                            <div class="waves">
-                                <div class="waves1"></div>
-                                <div class="waves2"></div>
-                                <div class="waves3"></div>
-                                <div class="waves4"></div>
-                                <div class="waves5"></div>
-                                <div class="waves6"></div>
-                                <div class="waves7"></div>
-                                <div class="waves8"></div>
-                                <div class="waves9"></div>
-                                <div class="waves10"></div>
-                                <div class="waves11"></div>
-                                <div class="waves12"></div>
-                                <div class="waves13"></div>
-                                <div class="waves14"></div>
-                                <div class="waves15"></div>
-                                <div class="waves16"></div>
-                            </div>
-                            <h2 class="about__section__title__subtitle subtitle">Bright Lights</h2>
-                        </div>
+            </div>
+            <div class="news__title">
+                <a href="#" target="_blank" class="news__text"><span>Halloween vibes.</span><span>Listen my new track!</span></a>
+                <a href="#" target="_blank" class="news__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</a>
+            </div>
+        </div> 
 
-                        <p class="about__section__text">
-                            <span> Lights is a multi-Grammy nominated singer, songwriter, DJ and record producer. She has written for numerous </span>
-                            <span class="about__section__text__part2">pop stars including Britney Spears, Justin Bieber, Usher and Beyoncé. Her catalog has amassed over 1 billion streams worldwide. More than 100 million of those streams can be attributed to her artist career and include such hits as Porter Robinson's "Language," 3LAU's "How You Love Me" and her own single "Runaway." She was also a featured vocalist on Zedd's #1 Clarity album. Her latest music video, "Put It Down," reached 1 million streams in the first week, releasing independently. Bright Lights is currently in the studio working on a self-produced album slated for release in 2020.</span>
-                        </p>
+        <div class="news__item">
+            <div class="news__item__3">
 
-                        <div class="about__section__facts">
-                            <div class="about__section__facts__container">
-                                <div class="about__section__facts__element">
-                                    <div class="about__section__facts__element__icon"></div>
-                                    <div class="about__section__facts__element__text">Based in: Los Angeles</div>
-                                </div>
-
-                                <div class="about__section__facts__element">
-                                    <div class="about__section__facts__element__icon"></div>
-                                    <div class="about__section__facts__element__text">Genre: #DancePop 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="about__section__facts__container">
-                                <div class="about__section__facts__element">
-                                    <div class="about__section__facts__element__icon"></div>
-                                    <div class="about__section__facts__element__text">Founded in 2011
-                                    </div>
-                                </div>
-
-                                <div class="about__section__facts__element">
-                                    <div class="about__section__facts__element__icon"></div>
-                                    <div class="about__section__facts__element__text">Label: 333 Recordings</div>
-                                </div> 
-                            </div>
-                        </div>
-                    </section>
-
-                    <div class="about__slider">
-                            <img class="about__slider__element about__slider__element_current" src="media/images/sliderElement1.png" alt="">
-                            <img class="about__slider__element about__slider__element_next" src="media/images/sliderElement2.png" alt="">
-                            <img class="about__slider__element about__slider__element_hidden" src="media/images/gallery_5.jpg" alt="">
-                    </div>
-                </div>
-    <!-- ____ Review ____ -->
-
-                <div class="review data-review">
-                    <div class="review__text">
-                        <img  src="media/images/“.svg" alt="" class="review__text__sign">
-                        <p class="review__text__text">“In an age where mainstream music is designed to be as
-                            easily consumed as possible, listening to Bright Lights is
-                            refreshing, to say the least. Her sound is perfect for radio
-                            but complex enough to separate her from other pop newcomers.”</p>
-                        <a href="#" target="_blank" class="review__text__siteName">PopULove.net</a>
-                    </div>
-                    <img src="media/images/sliderElement2.png" alt="" class="review__photo">
-                </div>     
-                
-                
-    <!-- ____ Music ____ -->
-
-
-                <article class="music data-music">
-                    <div class="music__photo">
-                        <img src="media/images/musicPhoto.png" alt="">
-                    </div>
-                    <div class="music__content">
-                        <div class="music__content__title">
-                            <div class="waves">
-                                <div class="waves1"></div>
-                                <div class="waves2"></div>
-                                <div class="waves3"></div>
-                                <div class="waves4"></div>
-                                <div class="waves5"></div>
-                                <div class="waves6"></div>
-                                <div class="waves7"></div>
-                                <div class="waves8"></div>
-                                <div class="waves9"></div>
-                                <div class="waves10"></div>
-                                <div class="waves11"></div>
-                                <div class="waves12"></div>
-                                <div class="waves13"></div>
-                                <div class="waves14"></div>
-                                <div class="waves15"></div>
-                                <div class="waves16"></div>
-                            </div>
-                            <h2 class="music__content__title__subtitle subtitle">Last tracks</h2>
-                        </div>
-                        <div class="music__content__player">
-                            <div id="player" class="titlesAndPlayer__player">
-                                <audio id="audio" class="audio" preload="metadata">
-                                    <source src="#" type="audio/mpeg">
-                                </audio>
-                                <div id="playBtn" class="titlesAndPlayer__player__play titlesAndPlayer__player__play-min"><img id="playPause" class="titlesAndPlayer__player__play__play-stop" src="media/images/btn-play.svg" alt=""></div>
-                                <div id="progressArea" class="titlesAndPlayer__player__progress__container titlesAndPlayer__player__progress__container-second">
-                                    <div id="progressBar" class="titlesAndPlayer__player__progress__container__progress"></div>
-                                </div>
-                                <div class="titlesAndPlayer__player__time">
-                                    <p><span id="currentTime" class="titlesAndPlayer__player__time__currTime"></span>-<span id="duration" class="titlesAndPlayer__player__time__durat"></span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="music__content__list">
-                            
-                        </div>
-                        
-                        <div class="music__content__follow">
-                            <h3 class="music__content__follow__subtitle subtitle2">Follow me:</h3>
-                            <a href="#" target="_blank" class="music__content__follow__element">
-                                <img src="media/images/spotify.svg" alt="" class="music__content__follow__element__icon">
-                                <div class="music__content__follow__element__name">Spotify</div>
-                            </a>
-                            <a href="#" target="_blank" class="music__content__follow__element">
-                                <img src="media/images/itunes.svg" alt="" class="music__content__follow__element__icon">
-                                <div class="music__content__follow__element__name">iTunes</div>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-    
-    <!-- ____ Gallery ____ -->
-
-                <div class="gallery data-gallary">
-                    <img src="media/images/gallery_1.png" class="gallery__element link" alt="">
-                    <div class="gallary__bigelement">
-                        <div class="gallary__bigElement__container">
-                            <img src="media/images/gallery_2.png"  class="gallery__element__lil link" alt="">
-                            <img src="media/images/gallery_3.png" class="gallery__element__lil link" alt="">
-                        </div>
-                        <div class="gallary__bigElement__container link">
-                            <div class="gallery__element__big"></div>
-                            <p class="no-selection pointer">EDC Las Vegas Mainstage</p>
-                        </div>
-                    </div>
-                    <img src="media/images/gallery_4.png" class="gallery__element link" alt="">
-                </div>
-
-
-    <!-- ____ Events ____ -->
-
-
-                <div class="events data-events">
-                    <div class="events__content">
-        
-                    </div>
-                </div>
-
-
-    <!-- ____ Footer ____ -->
-
-
-                <footer class="footer data-footer">
-                    <div class="footer__logoContainer">
-                        <img class="firstScreen__logo" src="media/images/Logo.svg" alt="">
-                        <img class="firstScreen__name firstScreen__name-footer" src="media/images/SiteName.svg" alt="">
-                    </div>
-                    <div class="footer__contactsContainer">
-                        <div class="footer__contactsContainer__contactsName">
-                            <p class="noMargin footer__contactsContainer__contactsName-textEnd">Artist Management:</p>
-                            <p class="noMargin footer__contactsContainer__contactsName-textEnd">EMAIL:</p>
-                        </div>
-                        <div class="footer__contactsContainer__contacts">
-                            <p class="noMargin">Jake Henny</p>
-                            <p class="noMargin">jake@brightlightsofficial.com</p>
-                        </div>
-                    </div>
-
-                    <div class="media__container">
-                        <a class="media__item" href="#" target="_blank">
-                            <div class="outer-circle">
-                                <div class="inner-circle">
-                                    <svg class="icon">
-                                        <use  xlink:href="#iTunes"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="media__item" href="#" target="_blank">
-                            <div class="outer-circle">
-                                <div class="inner-circle">
-                                    <svg class="icon">
-                                        <use  xlink:href="#spotify"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="media__item" href="#" target="_blank">
-                            <div class="outer-circle">
-                                <div class="inner-circle">
-                                    <svg class="icon">
-                                        <use  xlink:href="#instagram"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="media__item" href="#" target="_blank">
-                            <div class="outer-circle">
-                                <div class="inner-circle">
-                                    <svg class="icon">
-                                        <use  xlink:href="#youTube"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="media__item" href="#" target="_blank">
-                            <div class="outer-circle">
-                                <div class="inner-circle">
-                                    <svg class="icon">
-                                        <use  xlink:href="#twitter"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="media__item" href="#" target="_blank">
-                            <div class="outer-circle">
-                                <div class="inner-circle">
-                                    <svg class="icon">
-                                        <use  xlink:href="#facebook"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <p class="copyright">©  2020 DJ bright lights.</p>
-                </footer>        
+            </div>
+            <div class="news__title">
+                <a href="#" target="_blank" class="news__text"><span>WarForLove is OUT NOW!!</span><span>Stream it here!</span></a>
+                <a href="#" target="_blank" class="news__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..."</a>
+            </div>
+        </div> 
     </div>
-</div>
+        
+        <!-- ____ About ____ -->
+    <div class="container">
+        <div class="about data-about">
+            <section class="about__section">
+                <div class="about__section__title">
+                    <div class="waves">
+                        <div class="waves1"></div>
+                        <div class="waves2"></div>
+                        <div class="waves3"></div>
+                        <div class="waves4"></div>
+                        <div class="waves5"></div>
+                        <div class="waves6"></div>
+                        <div class="waves7"></div>
+                        <div class="waves8"></div>
+                        <div class="waves9"></div>
+                        <div class="waves10"></div>
+                        <div class="waves11"></div>
+                        <div class="waves12"></div>
+                        <div class="waves13"></div>
+                        <div class="waves14"></div>
+                        <div class="waves15"></div>
+                        <div class="waves16"></div>
+                    </div>
+                    <h2 class="about__section__title__subtitle subtitle">Bright Lights</h2>
+                </div>
+
+                <p class="about__section__text">
+                    <span> Lights is a multi-Grammy nominated singer, songwriter, DJ and record producer. She has written for numerous </span>
+                    <span class="about__section__text__part2">pop stars including Britney Spears, Justin Bieber, Usher and Beyoncé. Her catalog has amassed over 1 billion streams worldwide. More than 100 million of those streams can be attributed to her artist career and include such hits as Porter Robinson's "Language," 3LAU's "How You Love Me" and her own single "Runaway." She was also a featured vocalist on Zedd's #1 Clarity album. Her latest music video, "Put It Down," reached 1 million streams in the first week, releasing independently. Bright Lights is currently in the studio working on a self-produced album slated for release in 2020.</span>
+                </p>
+
+                <div class="about__section__facts">
+                    <div class="about__section__facts__container">
+                        <div class="about__section__facts__element">
+                            <div class="about__section__facts__element__icon"></div>
+                            <div class="about__section__facts__element__text">Based in: Los Angeles</div>
+                        </div>
+
+                        <div class="about__section__facts__element">
+                            <div class="about__section__facts__element__icon"></div>
+                            <div class="about__section__facts__element__text">Genre: #DancePop 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__section__facts__container">
+                        <div class="about__section__facts__element">
+                            <div class="about__section__facts__element__icon"></div>
+                            <div class="about__section__facts__element__text">Founded in 2011
+                            </div>
+                        </div>
+
+                        <div class="about__section__facts__element">
+                            <div class="about__section__facts__element__icon"></div>
+                            <div class="about__section__facts__element__text">Label: 333 Recordings</div>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+
+            <div class="about__slider">
+                    <img class="about__slider__element about__slider__element_current" src="media/images/sliderElement1.png" alt="">
+                    <img class="about__slider__element about__slider__element_next" src="media/images/sliderElement2.png" alt="">
+                    <img class="about__slider__element about__slider__element_hidden" src="media/images/gallery_5.jpg" alt="">
+            </div>
+        </div>
+            <!-- ____ Review ____ -->
+
+        <div class="review data-review">
+            <div class="review__border">
+                <div class="review__text">
+                    <img  src="media/images/“.svg" alt="" class="review__text__sign">
+                    <p class="review__text__text">“In an age where mainstream music is designed to be as
+                        easily consumed as possible, listening to Bright Lights is
+                        refreshing, to say the least. Her sound is perfect for radio
+                        but complex enough to separate her from other pop newcomers.”</p>
+                    <a href="#" target="_blank" class="review__text__siteName">PopULove.net</a>
+                </div>
+                <img src="media/images/sliderElement2.png" alt="" class="review__photo">
+            </div>
+        </div>     
+                        
+                        
+            <!-- ____ Music ____ -->
+
+
+        <article class="music data-music">
+            <div class="music__photo">
+                <img class="music__photo"src="media/images/musicPhoto.png" alt="">
+            </div>
+            <div class="music__content">
+                <div class="music__content__title">
+                    <div class="waves">
+                        <div class="waves1"></div>
+                        <div class="waves2"></div>
+                        <div class="waves3"></div>
+                        <div class="waves4"></div>
+                        <div class="waves5"></div>
+                        <div class="waves6"></div>
+                        <div class="waves7"></div>
+                        <div class="waves8"></div>
+                        <div class="waves9"></div>
+                        <div class="waves10"></div>
+                        <div class="waves11"></div>
+                        <div class="waves12"></div>
+                        <div class="waves13"></div>
+                        <div class="waves14"></div>
+                        <div class="waves15"></div>
+                        <div class="waves16"></div>
+                    </div>
+                    <h2 class="music__content__title__subtitle subtitle">Last tracks</h2>
+                </div>
+                <div class="music__content__player">
+                    <div id="player" class="titlesAndPlayer__player">
+                        <audio id="audio" class="audio" preload="metadata">
+                            <source src="#" type="audio/mpeg">
+                        </audio>
+                        <div id="playBtn" class="titlesAndPlayer__player__play titlesAndPlayer__player__play-min"><img id="playPause" class="titlesAndPlayer__player__play__play-stop" src="media/images/btn-play.svg" alt=""></div>
+                        <div id="progressArea" class="titlesAndPlayer__player__progress__container titlesAndPlayer__player__progress__container-second">
+                            <div id="progressBar" class="titlesAndPlayer__player__progress__container__progress"></div>
+                        </div>
+                        <div class="titlesAndPlayer__player__time">
+                            <p><span id="currentTime" class="titlesAndPlayer__player__time__currTime"></span>-<span id="duration" class="titlesAndPlayer__player__time__durat"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="music__content__list">
+                                    
+                </div>
+                                
+                <div class="music__content__follow">
+                    <h3 class="music__content__follow__subtitle subtitle2">Follow me:</h3>
+                    <a href="#" target="_blank" class="music__content__follow__element">
+                        <img src="media/images/spotify.svg" alt="" class="music__content__follow__element__icon">
+                        <div class="music__content__follow__element__name">Spotify</div>
+                    </a>
+                    <a href="#" target="_blank" class="music__content__follow__element">
+                        <img src="media/images/itunes.svg" alt="" class="music__content__follow__element__icon">
+                        <div class="music__content__follow__element__name">iTunes</div>
+                    </a>
+                </div>
+            </div>
+        </article>
+            
+            <!-- ____ Gallery ____ -->
+
+        <div class="gallery data-gallary">
+            <img src="media/images/gallery_1.png" class="gallery__element link" alt="">
+            <div class="gallary__bigelement">
+                <div class="gallary__bigElement__container">
+                    <img src="media/images/gallery_2.png"  class="gallery__element__lil link" alt="">
+                    <img src="media/images/gallery_3.png" class="gallery__element__lil link" alt="">
+                </div>
+                <div class="gallary__bigElement__container link">
+                    <div class="gallery__element__big"></div>
+                    <p class="no-selection pointer">EDC Las Vegas Mainstage</p>
+                </div>
+            </div>
+            <img src="media/images/gallery_4.png" class="gallery__element link" alt="">
+        </div>
+
+
+            <!-- ____ Events ____ -->
+
+        
+        <div class="events data-events">
+            <div class="events__content">
+                
+            </div>
+        </div>
+        
+
+
+            <!-- ____ Footer ____ -->
+
+
+        <footer class="footer data-footer">
+            <div class="footer__logoContainer">
+                <img class="firstScreen__logo" src="media/images/Logo.svg" alt="">
+                <img class="firstScreen__name firstScreen__name-footer" src="media/images/SiteName.svg" alt="">
+            </div>
+            <div class="footer__contactsContainer">
+                <div class="footer__contactsContainer__contactsName">
+                    <p class="noMargin footer__contactsContainer__contactsName-textEnd">Artist Management:</p>
+                    <p class="noMargin footer__contactsContainer__contactsName-textEnd">EMAIL:</p>
+                </div>
+                <div class="footer__contactsContainer__contacts">
+                    <p class="noMargin">Jake Henny</p>
+                    <p class="noMargin">jake@brightlightsofficial.com</p>
+                </div>
+            </div>
+
+            <div class="media__container">
+                <a class="media__item" href="#" target="_blank">
+                    <div class="outer-circle">
+                        <div class="inner-circle">
+                            <svg class="icon">
+                                <use  xlink:href="#iTunes"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a class="media__item" href="#" target="_blank">
+                    <div class="outer-circle">
+                        <div class="inner-circle">
+                            <svg class="icon">
+                                <use  xlink:href="#spotify"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a class="media__item" href="#" target="_blank">
+                    <div class="outer-circle">
+                        <div class="inner-circle">
+                            <svg class="icon">
+                                <use  xlink:href="#instagram"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a class="media__item" href="#" target="_blank">
+                    <div class="outer-circle">
+                        <div class="inner-circle">
+                            <svg class="icon">
+                                <use  xlink:href="#youTube"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a class="media__item" href="#" target="_blank">
+                    <div class="outer-circle">
+                        <div class="inner-circle">
+                            <svg class="icon">
+                                <use  xlink:href="#twitter"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a class="media__item" href="#" target="_blank">
+                    <div class="outer-circle">
+                        <div class="inner-circle">
+                            <svg class="icon">
+                                <use  xlink:href="#facebook"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <p class="copyright">©  2020 DJ bright lights.</p>
+        </footer>        
+    </div>
 
 <!-- ____ Modal Windows ____ --> 
 
